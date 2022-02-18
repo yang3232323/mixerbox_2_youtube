@@ -4,14 +4,14 @@ import json
 
 # read mixerbox backup playlist
 with open('./mixerbox_library.txt','r',encoding="utf-8") as file:
-    result = json.loads(file.read())
+    result = json.loads(file.read(https://www.mbplayer.com/list/41221913))
 
 for i in result:
     # read my list
     if i['key'] == 'my_playlist':
         for playlist in i['content']:
             # this is playlist title
-            playlist_name = (playlist['name'])
+            playlist_name = (playlist['mixerbox_library.txt'])
             with open('./'+playlist_name+'.txt','a',encoding='utf-8') as f : 
                 for playlist_music in playlist['content']:
                     # playlist content is url code
